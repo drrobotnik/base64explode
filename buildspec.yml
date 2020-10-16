@@ -6,7 +6,7 @@ phases:
       nodejs: 12
     commands:
       - echo Installing node modules...
-      - npm install --production
+      - npm i
   build:
     commands:
       - echo Building application...
