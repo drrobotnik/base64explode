@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Installing node modules...
+      - npm install --production
+  build:
+    commands:
+      - echo Building application...
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
+
+cache:
+  paths:
+    - 'node_modules/**/*' # Cache `node_modules` for faster `yarn` or `npm i`
