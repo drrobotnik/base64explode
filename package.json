@@ -11,13 +11,15 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
+    "serve": "^11.3.2",
     "typeface-roboto": "^1.1.13"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build -l 8080"
   },
   "eslintConfig": {
     "extends": "react-app"
