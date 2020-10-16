@@ -1,0 +1,206 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {color: #eee; text-transform: uppercase; font-family: 'Oswald', sans-serif;font-weight: 700;}
+h1 .title {font-weight: 200;}
+
+.explosionContainer {
+    position: relative;
+}
+
+.explosion {
+    text-transform: uppercase;
+    position: relative;
+    color: #ffd12a;
+    z-index: 4;
+}
+
+.explosion:before {
+    content: 'EXPLOSION';
+    opacity: 70%;
+    position: absolute;
+    display: inline-block;
+    top: 2%;
+    left: 2%;
+    color: orange;
+    z-index: -1;
+}
+
+.explosion:after {
+    content: 'EXPLOSION';
+    opacity: 30%;
+    position: absolute;
+    display: inline-block;
+    top: 4%;
+    left: 4%;
+    color:orangered;
+    z-index: -2;
+}
+
+.animated-no {
+    animation: tada 250ms infinite; /* referring directly to the animation's @keyframe declaration */
+    display: block;
+}
+
+.adSpot {
+    border: 12px solid #ccc;
+    -webkit-appearance: none;
+    background-color: #18191A;
+    width: 100%;
+    max-width: 250px;
+}
+
+.no {
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 260px;
+    color: #ffd12a;
+}
+
+.no:before {
+    content: 'NO';
+    opacity: 70%;
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    left: 5%;
+}
+
+.no:after {
+    content: 'NO';
+    opacity: 30%;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 10%;
+}
+
+
+.inputs {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    margin:0 auto;
+    align-self: center;
+    width: 100%;
+}
+textarea{
+    width:100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    line-height: 1;
+    height: 40vh;
+    border-width: 12px;
+    -webkit-appearance: none;
+    background-color: #18191A;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #ffd12a;
+}
+
+.exiting {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    background-color: #000;
+    box-shadow: 5px 5px 5px #000;
+    z-index: 100;
+}
+
+.thirsty {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color:#ffd12a;
+    position: relative;
+}
+.thirsty:before {
+    content: 'THIRSTY';
+    opacity: 70%;
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    left: 5%;
+    color: orange;
+    z-index: -1;
+}
+
+.thirsty:after {
+    content: 'THIRSTY';
+    opacity: 30%;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 10%;
+    color: orangered;
+    z-index: -2;
+}
+
+
+
+.asinbeer {
+    font-size: 160px;
+}
+
+.bmcBtn {
+    color: #000;
+    background-color: #ffd12a;
+    font-family: 'Oswald', sans-serif;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 24px;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.close {
+    padding-top: 24px;
+}
